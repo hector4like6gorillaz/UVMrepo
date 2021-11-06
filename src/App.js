@@ -8,7 +8,8 @@ function App() {
   const [valor, setvalor] = useState(""); //este es un hook, llamdo useState
 
 
-  
+  //este un comentario
+  //de ejemplo para visualizar
 
  
 
