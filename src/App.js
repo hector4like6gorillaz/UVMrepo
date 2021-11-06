@@ -3,17 +3,15 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [valor, setvalor] = useState("");
+  const [valor, setvalor] = useState(""); //este es un hook, llamdo useState
 
-  function mensaje() {
+  function mensaje() { //esta es una funcion
     console.log("bienvenido a la matrix ", valor);
   }
 
-  function change(e) {
+  function change(e) {//esta es otra funcion
     setvalor(e.target.value);
   }
-
-  
 
   return (
     <div className="App">
