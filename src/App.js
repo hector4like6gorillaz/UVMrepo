@@ -2,18 +2,35 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 
+
+
 function App() {
   const [valor, setvalor] = useState(""); //este es un hook, llamdo useState
 
-  function mensaje() { //esta es una funcion
+
+  
+
+ 
+
+  let nombre = "hector";
+  function ImprimirNombre(){
+    console.log("estoy en nombre", nombre)
+  }
+
+ ImprimirNombre();
+
+  function mensaje() {
+    //esta es una funcion
     console.log("bienvenido a la matrix ", valor);
   }
 
-  function change(e) {//esta es otra funcion
+  function change(e) {
+    //esta es otra funcion
     setvalor(e.target.value);
   }
 
   return (
+    
     <div className="App">
       <header className="App-header">
         <h3>Programacion estructurada</h3>
@@ -23,11 +40,12 @@ function App() {
         </p>
         <input
           placeholder="escribe tu nombre"
-          onChange={(e) => change(e)}
+          onChange={(e)=> change(e)}
           value={valor}
         />
-        <button onClick={() => mensaje()}>Presioname!</button>
+        <button onClick={() => mensaje()}>Presioname!!!! porfavor</button>
         <p>Si me descargaste es porque ya sabes para que sirve git hub.</p>
+        {valor}
         <a
           className="App-link"
           href="https://reactjs.org"
